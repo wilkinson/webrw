@@ -1,0 +1,16 @@
+#-  NPM configuration file
+
+#-  .npmignore ~~
+#                                                       ~~ (c) SRW, 12 Mar 2013
+#                                                   ~~ last updated 12 Mar 2013
+
+.hgignore
+
+includes/
+uploads/
+
+/*.html
+/*.js
+/*.php
+
+#-  vim:set syntax=gitconfig:
