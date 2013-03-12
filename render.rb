@@ -30,8 +30,8 @@ File::open(filename, "w") do |f|
     <meta charset="utf-8"/>
     <meta name="author" content="Sean Wilkinson"/>
     <title>Project Description: WebRW</title>
-    <link rel="stylesheet" href="./print.css" media="print"/>
-    <link rel="stylesheet" href="./screen.css" media="screen"/>
+    <link rel="stylesheet" href="../print.css" media="print"/>
+    <link rel="stylesheet" href="../screen.css" media="screen"/>
     <link rel="shortcut icon" href="https://github.com/favicon.ico"/>
   </head>
   <body>
