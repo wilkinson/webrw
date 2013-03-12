@@ -4,6 +4,7 @@
         "email": "sean@mathbiol.org"
     },
     "dependencies": {
+        "corser": "1.2.x"
         "ftp": "0.1.x",
         "open-uri": "0.3.x"
     },
@@ -22,5 +23,5 @@
         {"type": "git", "url": "https://github.com/wilkinson/webrw.git"}
     ],
     "scripts": {},
-    "version": "1.0.1"
+    "version": "1.0.2"
 }
