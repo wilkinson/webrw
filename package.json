@@ -1,0 +1,26 @@
+{
+    "author": {
+        "name": "Sean Wilkinson",
+        "email": "sean@mathbiol.org"
+    },
+    "dependencies": {
+        "ftp": "0.1.x",
+        "open-uri": "0.3.x"
+    },
+    "description": "A simple read-write store for the Web Computer",
+    "devDependencies": {},
+    "engines": {
+        "node": ">= 0.8.x",
+        "npm": ">= 1.2.x"
+    },
+    "homepage": "http://wilkinson.github.com/webrw/",
+    "main": "lib/main.js",
+    "name": "webrw",
+    "optionalDependencies": {},
+    "private": false,
+    "repositories": [
+        {"type": "git", "url": "https://github.com/wilkinson/webrw.git"}
+    ],
+    "scripts": {},
+    "version": "1.0.0"
+}
