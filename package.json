@@ -4,7 +4,7 @@
         "email": "sean@mathbiol.org"
     },
     "dependencies": {
-        "corser": "1.2.x"
+        "corser": "1.2.x",
         "ftp": "0.1.x",
         "open-uri": "0.3.x"
     },
