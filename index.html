@@ -17,97 +17,13 @@
     <a id="github_ribbon" href="https://github.com/wilkinson/webrw">
       <span>Fork me on GitHub!</span>
     </a>
-    <h2>Readme</h2>
+    <h1>WebRW</h1>
 
-<p>A proxy tool built in PHP that supports basic web http restful api ideas like <strong>get</strong> and <strong>set</strong>. It does implement a <strong>delete</strong>, but it is an internal feature. Results are in JSON format mainly because this tool is supposed to be used programatically (sometimes to get around the same origin policy issue)</p>
-
-<h2>License</h2>
-
-<p>FREE LICENSE. You can use this software as you see fit just remember to give me some credit. The Author of this tool will bear <strong>no</strong> liability for any damage that results from the use of this tool.</p>
-
-<h2>Prerequisites</h2>
-
-<ul>
-<li>PHP5 with curl library enabled</li>
-</ul>
-
-<h2>How to Install</h2>
-
-<ul>
-<li>Download the files and extract to the desired folder on your webserver</li>
-<li>Change the permission on the WORKSPACE_DIRECTORY folder (default is &quot;doc&quot;) to allow all to read and write
-chmod a+rw /PATH/TO/FOLDER/doc/</li>
-<li>Go to the url you just created and without entering anything, you should get &quot;Invalid action!!!&quot;</li>
-</ul>
-
-<h2>Usage</h2>
-
-<h3>get</h3>
-
-<p><strong>GET RESULT AS JSON OBJECT</strong></p>
-
-<p><code>http://www.webrw-site.com?get=www.google.com</code></p>
-
-<h3>doc</h3>
-
-<p><strong>GET RESULT IN RAW FORMAT</strong></p>
-
-<p><code>http://www.webrw-site.com?doc=www.google.com</code></p>
-
-<h3>set</h3>
-
-<p><strong>Simple set operation</strong></p>
-
-<p>By entering the following</p>
-
-<p><code>http://www.webrw-site.com?set=lalalalalalalala</code></p>
-
-<p>you should get something similar to</p>
-
-<p><code>callback(&quot;UID:e5lr859ffa6f73234ab14bcc9a2d5c1876d31fd1&quot;)</code></p>
-
-<p>To retrieve your data you have two approaches</p>
-
-<p>Raw Data</p>
-
-<p><code>http://www.webrw-site.com/doc/UID:e5lr859ffa6f73234ab14bcc9a2d5c1876d31fd1</code></p>
-
-<p>Returns </p>
-
-<p><code>lalalalalalalala</code></p>
-
-<p>As a JSON object</p>
-
-<p><code>http://www.webrw-site.com/?get=UID:e5lr859ffa6f73234ab14bcc9a2d5c1876d31fd1</code></p>
-
-<p>Returns</p>
-
-<p><code>callback([&quot;lalalalalalalala&quot;,&quot;&quot;])</code></p>
-
-<p><strong>Append data value to an existing key</strong></p>
-
-<p>To append to an existing resource, simply add the &quot;key&quot; to the URL </p>
-
-<p><code>http://www.webrw-site.com?set=lelelelelelelele&amp;key=UID:e5lr859ffa6f73234ab14bcc9a2d5c1876d31fd1</code></p>
-
-<p>Returns the same key (as expected)</p>
-
-<p><code>callback(&quot;UID:e5lr859ffa6f73234ab14bcc9a2d5c1876d31fd1&quot;)</code></p>
-
-<p>Now if you look at the key</p>
-
-<p><code>http://www.webrw-site.com/doc/UID:e5lr859ffa6f73234ab14bcc9a2d5c1876d31fd1</code></p>
-
-<p>you should get </p>
-
-<p><code>lalalalalalalala</code></p>
-
-<p><code>lelelelelelelele</code></p>
-
-<h2>Useful Notes</h2>
-
-<ul>
-<li>all include statements are in class.webrw.php, so if you plan to use something other than index.php, all you have to include is class.webrw.php</li>
-</ul> 
+<p>This is a proxy tool that was originally written in PHP. The original version
+is available <a href="https://github.com/ebadedude/webrw">here</a>. That tool had already
+been ported to <a href="http://nodejs.org/">Node.js</a>, but it had never been published
+to <a href="https://npmjs.org/">NPM</a>. This project seeks to generalize the simple API
+of the original for maximum portability, robustness, and scalability, but it is
+not necessarily a drop-in replacement for the original.</p> 
   </body>
 </html>
